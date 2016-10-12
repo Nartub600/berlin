@@ -1,6 +1,53 @@
+@font-face {
+    font-family: GothamBold;
+    src: url("../fonts/GOTHAMBOLD.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamBold;
+    src: url("../fonts/GOTHAMBOLD-ITALIC.otf") format("opentype");
+    font-style: italic;
+}
+
+html, body {
+    height:100%;
+}
+
 body {
-	background-image: url("../img/Placa.jpg");
-	background-size: contain;
+	background-image: url("../img/bg.png");
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+a, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-left {
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    .img-logo {
+        width: 291px;
+    }
+}
+
+.footer-right {
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .img-silueta {
+        width: 108px;
+    }
+    .img-portfolio {
+        width: 250px;
+    }
+    .mailto {
+        font-family: GothamBold;
+    }
 }
