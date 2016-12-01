@@ -39,4 +39,22 @@ a, a:hover {
   .footer-right .mailto {
     font-family: GothamBold; }
 
+.footer-top {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center; }
+
+.footer-bottom {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer-bottom .mailto {
+    font-family: GothamBold;
+    font-size: 24pt; }
+
 /*# sourceMappingURL=berlin.css.map */

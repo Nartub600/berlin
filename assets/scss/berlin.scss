@@ -1,3 +1,21 @@
+@mixin sm {
+     @media (min-width: 768px){
+        @content;
+    }
+}
+
+@mixin md {
+     @media (min-width: 992px){
+        @content;
+    }
+}
+
+@mixin lg {
+     @media (min-width: 1200px){
+        @content;
+    }
+}
+
 @font-face {
     font-family: GothamBold;
     src: url("../fonts/gothambold.otf") format("opentype");
@@ -14,10 +32,10 @@ html, body {
 }
 
 body {
-	background-image: url("../img/bg.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+    background-image: url("../img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a, a:hover {
@@ -49,5 +67,26 @@ a, a:hover {
     }
     .mailto {
         font-family: GothamBold;
+    }
+}
+
+.footer-top {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .mailto {
+        font-family: GothamBold;
+        font-size: 24pt;
     }
 }
